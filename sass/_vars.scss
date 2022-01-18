@@ -1,0 +1,5 @@
+@each $color in blue, yellow, black {
+    .#{$color}{
+        color:#{$color};
+    }
+}

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*variables*/ 
+@import "vars";
+@import "redes";
+@import "mixins";
+
+$color-primario: linear-gradient(to left, red, orange);
+$space-between: space-between;
+
+.nav_menu{
+    @include Flexs;
+    width: 100%;
+    background-image: $color-primario;
+    height: 7rem;
+    #logo{
+        width: 100px;
+        height: 112px;
+    }
+    .div_menu{
+        margin: 4px; 
+        width: 30%;
+    }
+    .ul_menu{
+        display: flex;
+        justify-content: $space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .ul_menu li{
+        list-style: none;
+    }
+    .ul_menu li a{
+        text-decoration: none;
+    }
+    
+    .ul_menu li a:hover{
+        text-transform: uppercase;
+        transform:scale(3.3);
+        color: rgb(5, 1, 1);
+        text-decoration: none;
+    }
+        }
+    /*Main*/
+    .sectionFoto{
+        width: 100%;
+        height: 30rem;
+    }
+    
+    
+    .fotos_main{
+        background: $color-primario;
+        width: 100%;
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        column-gap: 30px;
+    }
+    
+    .titulo_imagenes{
+        color: rgb(7, 2, 4);
+        text-align: center;
+    }
+    .fotosPrincipales{
+        width: 100%;
+        height: 80%;
+        transition: all 1s;
+    }
+    .fotosPrincipales:hover{
+        width: 80%;
+        height: 60%;
+        filter: grayscale(1);
+    }
+/*Pie*/
+
+    .footer_{
+        flex-direction: column;
+        height: 5rem;
+        background-color: #2BE0FF;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-pie{  
+        display: flex;  
+        list-style: none;
+    }
+    .iconos{
+        height: 20px;
+        width: 20px;
+    }
+
+    /*Contacto*/
+
+.form_container{
+    width: 50%;
+    background-color:brown;
+    height: 50%;
+}
+
+.Form_1{
+    text-align:center;
+}
+
+
+.Form_1{
+    justify-content:center;
+    display:flex;
+    background-position: center;
+    height: 100vh;
+    background-image: url("../img/contactonueva.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*Para que ocupe toda la imagen*/
+}

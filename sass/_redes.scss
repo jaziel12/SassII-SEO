@@ -1,0 +1,14 @@
+$redes: (
+    Instagram: #ee5555,
+    facebook: #957d3a,
+    whatsapp: #C25E30,
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red} {
+        color: $color;
+        }
+}
+
+
+
